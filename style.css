@@ -1,0 +1,119 @@
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+  .label {
+    @apply  text-[#4F4F4F] text-[10px] md:text-[12px];
+  }
+  .render{
+    @apply md:w-[465px] md:h-[56px] w-full h-[40.56px] border border-solid rounded-xl border-[#828282] md:mt-[6.97px] mt-[5.23px];
+  }
+  .fiedls{
+  @apply flex items-center md:m-[16px] m-[11px] md:ml-3 ml-[10.25px];
+  }
+  .caption{
+    @apply text-[#828282] text-[12px] md:text-[16px]  md:ml-4 ml-[10.81px] outline-none appearance-none w-full bg-transparent;
+  }
+  .list{
+    @apply  p-[2px] text-[#b8babd] text-center items-center text-[12px] md:text-[14px] hover:bg-[#3f4042]  ;
+  }
+  .rend{
+    @apply md:w-[217px] md:h-[56px] w-full h-[40.56px] border border-solid rounded-xl border-[#828282] md:mt-[6.97px] mt-[5.23px];
+  }
+}
+
+.render-1.success{
+  @apply ring-[2px] ring-green-300;
+}
+.render-1.error{
+  @apply ring-[2px] ring-red-300;
+}
+
+.render-2.success{
+  @apply ring-[2px] ring-green-300;
+}
+.render-2.error{
+  @apply ring-[2px] ring-red-300;
+}
+
+.render-3.success{
+  @apply ring-[2px] ring-green-300;
+}
+.render-3.error{
+  @apply ring-[2px] ring-red-300;
+}
+
+.render-4.success{
+  @apply ring-[2px] ring-green-300;
+}
+.render-4.error{
+  @apply ring-[2px] ring-red-300;
+}
+
+.render-5.success{
+  @apply ring-[2px] ring-green-300;
+}
+.render-5.error{
+  @apply ring-[2px] ring-red-300;
+}
+
+
+.rend-1.success{
+  @apply ring-[2px] ring-green-300;
+}
+.rend-1.error{
+  @apply ring-[2px] ring-red-300;
+}
+
+.rend-2.success{
+  @apply ring-[2px] ring-green-300;
+}
+.rend-2.error{
+  @apply ring-[2px] ring-red-300;
+}
+
+/* Animation */
+
+[class*="reveal-"]{
+  opacity: 0;
+}
+
+.reveal-1{
+  transition-delay: .0.5s;
+  transform: translateX(-25px);
+}
+.reveal-2{
+  transition-delay: .0.5s;
+  transform: translateX(25px);
+}
+.reveal-3{
+  transition-delay: .1s;
+  transform: translateX(-25px);
+}
+.reveal-4{
+  transition-delay: .1s;  
+  transform: translateX(25px);
+}
+.reveal-5{
+  transition-delay: .2s;
+  transform: translateX(25px);
+}
+.reveal-6{
+  transition-delay: .2s;  
+  transform: translateX(-25px);
+}
+
+.reveal-visible{
+  opacity: 1;
+  transform: translateX(0);
+  transition: 1s cubic-bezier(0.5,0,0,1);
+}
+
+
+
